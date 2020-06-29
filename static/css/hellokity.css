@@ -1,0 +1,17 @@
+.group_date{
+    justify-content: space-between;
+}
+.edition_logo{
+    background: url(../img/8FW6tOR.png) center center no-repeat;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    width: 400px;
+    height: 100px;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.edition_logo div{
+    margin: 48px 0 0 130px;
+}

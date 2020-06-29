@@ -1,0 +1,131 @@
+<!--
+ * @
+ * @Author: Yellow
+ * @Date: 2020-01-13 13:57
+ * @LastEditTime: 2020-06-20 13:45
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moment Tab</title>
+    <link rel="stylesheet" href="static/css/moment.css">
+    <link rel="stylesheet" href="static/css/note.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="textarea-wrap">
+            <textarea name="" id="textarea" class="textarea" placeholder="WRITE NOTE..."></textarea>
+            <img src="static/img/timg.jpg" class="textarea-icon" alt="">
+        </div>
+        <div class="filter">
+            <div class="wrap" id="wrap">
+                <div class="group_date">
+                    <div class="date_wrap">
+                        <span id="date"></span>
+                        <span id="week"></span>
+                    </div>
+                </div>
+
+                <div class="group_memorandum">
+                    <div class="memorandum_title">备忘录</div>
+                    <div class="memorandum_note" id="memorandum">
+                        <span class="memorandum_text"></span>
+                    </div>
+                </div>
+                <div class="group_search">
+                    <div class="wrap_search">
+                        <input type="text" id="search" class="search" placeholder="Search..." data-type="google">
+                        <!-- <div class="search_icon">
+                            <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+                        </div> -->
+                        <div class="search_type" id="selectTab" data-display="none">
+                            <div class="type_wrap">
+                                <div class="type_item active">
+                                    <img class="search_logo" src="static/img/chrome.jpg" alt="">
+                                </div>
+                                <div class="type_item">
+                                    <img class="search_logo" src="static/img/bd.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group_time">
+                    <div id="now" class="now_time">
+                        <span id="day" class="day"></span>
+                        <span id="second" class="second"></span>
+                    </div>
+                    <div id="millisecond" class="millisecond"></div>
+                </div>
+
+                <div class="flicker_time">
+                    <div class="digit hour_pre">
+                        <div class="segment parallel"></div>
+                        <div class="segment parallel"></div>
+                        <div class="segment parallel"></div>
+                        <div class="segment vitical"></div>
+                        <div class="segment vitical"></div>
+                        <div class="segment vitical"></div>
+                        <div class="segment vitical"></div>
+                    </div>
+                    <div class="digit hour_end">
+                        <div class="segment parallel"></div>
+                        <div class="segment parallel"></div>
+                        <div class="segment parallel"></div>
+                        <div class="segment vitical"></div>
+                        <div class="segment vitical"></div>
+                        <div class="segment vitical"></div>
+                        <div class="segment vitical"></div>
+                    </div>
+                    <div class="pointer">:</div>
+                    <div class="digit minute_pre">
+                        <div class="segment parallel"></div>
+                        <div class="segment parallel"></div>
+                        <div class="segment parallel"></div>
+                        <div class="segment vitical"></div>
+                        <div class="segment vitical"></div>
+                        <div class="segment vitical"></div>
+                        <div class="segment vitical"></div>
+                    </div>
+                    <div class="digit minute_end">
+                        <div class="segment parallel"></div>
+                        <div class="segment parallel"></div>
+                        <div class="segment parallel"></div>
+                        <div class="segment vitical"></div>
+                        <div class="segment vitical"></div>
+                        <div class="segment vitical"></div>
+                        <div class="segment vitical"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dialog" id="d_memorandum">
+            <div class="d_textarea">
+                <textarea name="" class="note_textarea" id="noteTextarea"></textarea>
+                <div>
+                    <select name="" id="d_hour"></select>
+                    <span class="clock_point">:</span>
+                    <select name="" id="d_minute"></select>
+                </div>
+                <div class="d_handel">
+                    <span class="d_clear">清空</span>
+                    <span class="d_submit">保存</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/moment.js"></script>
+    <script src="static/js/basis.js"></script>
+    <script src="static/js/time.js"></script>
+    <script src="static/js/note.js"></script>
+    <script src="static/js/follow-mouse.js"></script>
+</body>
+
+</html>

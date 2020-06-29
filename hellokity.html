@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moment Tab</title>
+    <link rel="stylesheet" href="static/css/moment.css">
+    <link rel="stylesheet" href="static/css/hellokity.css">
+</head>
+
+<body>
+    <div class="wrap" id="wrap">
+        <div class="group_date">
+            <div class="edition_logo">
+                <div>Hello Kity Edition</div>
+            </div>
+            <div class="date_wrap">
+                <div id="date"></div>
+                <div id="week"></div>
+            </div>
+        </div>
+
+        <div class="group_search">
+            <div class="wrap_search">
+                <input type="text" id="search" class="search" placeholder="Search..." data-type="google">
+                <div class="search_type" id="selectTab" data-display="none">
+                    <div class="type_wrap">
+                        <div class="type_item active">
+                            <img class="search_logo" src="static/img/google.png" alt="">
+                            <span>google</span>
+                        </div>
+                        <div class="type_item">
+                            <img class="search_logo" src="static/img/baidu.png" alt="">
+                            <span>百度</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="group_time">
+            <div id="now" class="now_time">
+                <span id="day" class="day"></span>
+                <span id="second" class="second"></span>
+            </div>
+            <div id="millisecond" class="millisecond"></div>
+        </div>
+
+        <div class="flicker_time">
+            <div class="digit hour_pre">
+                <div class="segment parallel"></div>
+                <div class="segment parallel"></div>
+                <div class="segment parallel"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+            </div>
+            <div class="digit hour_end">
+                <div class="segment parallel"></div>
+                <div class="segment parallel"></div>
+                <div class="segment parallel"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+            </div>
+            <div class="pointer">:</div>
+            <div class="digit minute_pre">
+                <div class="segment parallel"></div>
+                <div class="segment parallel"></div>
+                <div class="segment parallel"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+            </div>
+            <div class="digit minute_end">
+                <div class="segment parallel"></div>
+                <div class="segment parallel"></div>
+                <div class="segment parallel"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+            </div>
+            <div class="pointer">:</div>
+            <div class="digit second_pre">
+                <div class="segment parallel"></div>
+                <div class="segment parallel"></div>
+                <div class="segment parallel"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+            </div>
+            <div class="digit second_end">
+                <div class="segment parallel"></div>
+                <div class="segment parallel"></div>
+                <div class="segment parallel"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+                <div class="segment vitical"></div>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/moment.js"></script>
+    <script src="static/js/hellowkity.js"></script>
+    <script src="static/js/basis.js"></script>
+    <script src="static/js/follow-mouse.js"></script>
+</body>
+
+</html>

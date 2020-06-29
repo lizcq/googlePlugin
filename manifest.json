@@ -1,0 +1,71 @@
+{
+    "manifest_version": 2,
+    "name": "momentTab",
+    "version": "1.0.0",
+    "description": "带你看遍世界的新标签页",
+    "icons": {
+        "16": "static/img/logo.png",
+        "48": "static/img/logo.png",
+        "128": "static/img/logo.png"
+    },
+    "background": {
+        "script": "static/background.js"
+    },
+    "browser_action": {
+        "default_icon": "static/img/logo.png",
+        "default_title": "momentTab",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "static/js/jquery.min.js",
+                "static/js/basis.js"
+            ],
+            "css": [
+                "static/css/original.css"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "*://*/*.png",
+                "*://*/*.jpg",
+                "*://*/*.gif",
+                "*://*/*.bmp"
+            ],
+            "js": [
+                "static/js/show-image-content-size.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "notifications",
+        "webRequest",
+        "webRequestBlocking",
+        "storage",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "web_accessible_resources": [
+        "js/inject.js"
+    ],
+    "homepage_url": "https://www.google.com",
+    "chrome_url_overrides": {
+        "newtab": "note.html"
+    },
+    "options_page": "options.html",
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    },
+    "omnibox": {
+        "keyword": "go"
+    },
+    "devtools_page": "devtools.html"
+}
